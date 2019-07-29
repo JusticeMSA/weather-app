@@ -5,57 +5,76 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="theme-color" content="#000"/>
         <title>Climer | Weather App by Justice M |  HTML | CSS | Javascript</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
-        <!--Header start-->
-        <header>
-            <div class="logo"></div>
-            <div class="scale-switch"></div>
-            <div class="my-profile"></div>
-        </header>
-        <!--Header end-->
+        <!--Search screen start-->
+        <div class="search">
+            <div>
+                <h1>Climer weather</h1><br>
+                <input type="text" placeholder="Enter city name" name="city" id="searchInput">
+                <input type="submit" value="&#8594" id="searchBtn">
+            </div>
+        </div>
+        <!--Search screen end-->
+
+        <!--Scale switch start-->
+        <div class="scale-type scale-switch">
+            &#8451
+        </div>
+        <!--Scale switch end-->
+
 
         <!--Heading start-->
         <h1>Climer Weather</h1>
+        <div class="today-date">july 19</div>
         <!--Heading end-->
 
         <!--Todays weather start-->
         <section class="today">
-            <div class="today-flex">
-                <div class="today-date">mon, july 19</div>
-                <div class="today-forecust">23</div>
-                <div class="scale">C</div>
-            </div>
+            <h2>Today</h2>
+            <div class="animate-today">
+                <div class="today-flex">
+            
+                    <div class="today-forecust"></div>
+                    <div class="scale">
+                        <div class="scale-type scale-font">&#8451</div>
+                        <div>&nbsp</div>
+                        <div>&nbsp</div>
+                    </div>
+                </div>
+        </div>
         </section>
         <!--Todays weather end-->
 
 
-        <!--coming days weather start-->
+        <!--coming days weather start
         <section class="other-days">
+            <h2>Next 3 days</h2>
             <div class="other-days-flex">
                 <div class="first-day">
-                    <span class="weekday"></span>
-                    <span class="forecust"></span>
+                    <span class="weekday">TUE</span>
+                    <span class="other-forecust">22<span class="scale-type">&#8451</span></span>
                 </div>
                 <div class="second-day">
-                    <span class="weekday"></span>
-                    <span class="forecust"></span>
+                    <span class="weekday">WED</span>
+                    <span class="other-forecust">23<span class="scale-type">&#8451</span></span>
                 </div>
                 <div class="third-day">
-                    <span class="weekday"></span>
-                    <span class="forecust"></span>
+                    <span class="weekday">THU</span>
+                    <span class="other-forecust">19<span class="scale-type">&#8451</span></span>
                 </div>
             </div>
-        </section>
+        </section>-->
         <!--coming days weather end-->
 
 
         <!--Todays weather start-->
         <footer>
-            Made with love by <a href="#">Justice M</a>
-            <img src="#" alt="Justice M GitHub profile">
+            Made with <span style="color: red; font-size: 16px;">&#9829</span> by <a href="#">Justice M</a>
         </footer>
         <!--Todays weather end-->
+        <script type="module" src="js/App.js"></script>
     </body>
 </html>
